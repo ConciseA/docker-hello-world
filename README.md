@@ -2,6 +2,9 @@
 
 ### docker基本命令
 
+#### 镜像信息
+`$docker info` 查看镜像信息
+
 #### 搜索镜像：  
 `$docker search [镜像名称]`  
 `$docker search tomcat`
