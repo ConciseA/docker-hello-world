@@ -60,3 +60,24 @@
 `$docker push [镜像名称]`  
 先登录：  
 `$docker login --username=<user name> --email=<user eamil address>`
+
+#### 登录到容器内
+$docker exec -it 容器ID /bin/sh
+
+#### 查看日志
+$docker logs 容器ID/容器名称
+$docker logs -f 容器ID/容器名称
+
+#### 宿主机与镜像内文件相互copy
+docker cp 容器名/ID:容器中文件的路径及文件名 宿主机路径
+docker cp 宿主机文件路径及文件名 容器名/ID:容器中路径
+
+#### 导入镜像
+docker load -i 镜像文件
+
+#### 导出镜像
+docker save -o xxx 镜像名
+
+#### 清理
+
+https://docs.docker.com/config/pruning/#prune-containers
